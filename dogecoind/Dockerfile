@@ -12,10 +12,10 @@ RUN chmod +x dogecoin-1.10.0/bin/dogecoind dogecoin-1.10.0/bin/dogecoin-cli
 RUN ln -s /usr/src/dogecoin-1.10.0/bin/dogecoind /usr/bin/dogecoind
 RUN ln -s /usr/src/dogecoin-1.10.0/bin/dogecoin-cli /usr/bin/dogecoin-cli
 
-ADD dogecoin.conf /root/.dogecoin/dogecoin.conf
-RUN wget https://bootstrap.chain.so/bootstrap.dat -O /root/.dogecoin/bootstrap.dat
-
 RUN mkdir /root/data
+
+ADD dogecoin.conf /root/.dogecoin/dogecoin.conf
+RUN wget https://bootstrap.chain.so/bootstrap.dat -O /root/data/bootstrap.dat
 
 EXPOSE 22555 22556
 
