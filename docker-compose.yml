@@ -8,4 +8,4 @@ services:
       - 22555:22555
       - 22556:22556
     volumes:
-      - /mnt/data:/dogecoin/data
+      - /mnt/data:/root/.dogecoin
