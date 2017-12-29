@@ -17,9 +17,6 @@ ADD dogecoin.conf /root/.dogecoin/dogecoin.conf
 #RUN mkdir /root/data
 #RUN wget https://bootstrap.chain.so/bootstrap.dat -O /root/data/bootstrap.dat
 
-EXPOSE 22555 22556
-
-ENV RPCUSER user
-ENV RPCPASS pass
+EXPOSE 22555 22556 44555 44556
 
 CMD ["dogecoind", "-printtoconsole"]
