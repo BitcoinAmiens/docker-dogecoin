@@ -5,7 +5,7 @@ services:
     build: ./dogecoind
     restart: always
     ports:
-      - 22555:22555
-      - 22556:22556
+      - 44555:44555
+      - 44556:44556
     volumes:
       - /mnt/data:/root/.dogecoin
